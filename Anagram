@@ -1,0 +1,37 @@
+package bootcamp2;
+
+import java.util.Arrays;
+
+public class Anagram {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		// create 2 strings  to store input values
+		String str1 = "bat";
+		String str2 = "abt";
+		// check if condition
+		// if length of two string are equal the enter the if loop
+		if (str1.length() == str2.length())
+		{
+			// if convert string to character we use tocharArray method
+			char[] arr1 = str1.toCharArray();
+			// Arrays.sort method is used to sort the arrays
+			Arrays.sort(arr1);
+			char[] arr2 = str2.toCharArray();
+			// Arrays.sort method is used to sort the arrays
+			Arrays.sort(arr2);
+			// check if the two strings are anagram or not
+			if (Arrays.equals(arr1, arr2))
+			{
+				// printing output value
+				System.out.println(" Anagram ");
+			} // end  if block
+			else
+			{
+				// printing output value
+				System.out.println(" Not an anagram");
+			}
+		}
+
+	}// end of main method
+}// end of class block
