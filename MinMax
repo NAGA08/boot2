@@ -1,0 +1,42 @@
+package bootcamp2;
+
+import java.lang.Math;
+
+public class MinMax {
+
+	// creating the max method
+	public int max(int[] array) {
+		int max = 0;
+
+		// initiating the loop for finding maximum value
+		for (int i = 0; i < array.length; i++) {
+			if (array[i] > max) {
+				max = array[i];
+			}
+		}
+		return max;
+	}
+
+	// creating min method
+	public int min(int[] array) {
+		int min = array[0];
+
+		// initiating the loop for finding minimum value
+		for (int j = 0; j < array.length; j++) {
+			if (array[j] < min) {
+				min = array[j];
+			}
+		}
+		return min;
+	}
+
+	// main method
+	public static void main(String args[]) {
+		// declaring the array
+		int[] a = { 10, 4, 5, 4, 8, 10 };
+		MinMax m = new MinMax();
+		System.out.println("Max=" + m.max(a) + " & Min=" + m.min(a));
+
+	}
+
+}
