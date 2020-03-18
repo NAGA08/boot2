@@ -1,0 +1,30 @@
+package bootcamp2;
+
+import java.util.Arrays;
+
+public class Intersection {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+
+		//creating 2 arrays a & b
+		int a[]={10,4,5,8,6};
+		int b[]={9,5,4,7,11};
+		System.out.print("c=");
+		
+		
+		//run the loop and find intersection
+		for (int i=0;i<a.length;i++) 
+		{
+			for (int j=0; j<b.length;j++)
+			{
+				if (a[i]==b[j])
+				{
+					//printing the intersection array elements
+					System.out.print(b[j]+" ");
+					
+				}
+			}
+		}
+	}
+}
